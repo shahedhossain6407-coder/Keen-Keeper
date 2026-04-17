@@ -10,7 +10,7 @@ const Home = () => {
                relationships that matter most.</p>
                <button className='border border-gray-500 bg-[#244D3F] text-white px-2 py-1'>Add a Friend</button>
             </div>
-           <div className='card-container grid grid-cols-4 gap-10 text-center mt-20'>
+           <div className='card-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center mt-20'>
              <div className='card border border-gray-200 shadow-lg  p-10'>
                <h1 className='text-3xl font-bold text-gray-500'>10</h1>
                <p className='text-gray-500 font-semibold'>Total Friends</p>

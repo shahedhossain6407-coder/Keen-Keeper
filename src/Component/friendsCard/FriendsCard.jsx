@@ -7,7 +7,7 @@ const friends = use(friendsPromise);
     return (
         <div className='mt-20 '>
             <h3 className='font-bold text-2xl mb-10'>Your Friends</h3>     
-            <div className='grid grid-cols-4 container mx-auto justify-between gap-10 '> 
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 container mx-auto justify-between gap-10 '> 
               {
                 friends.map((friend)=><SingleFriendCard key={friend.id} friend={friend}></SingleFriendCard>)
               }
