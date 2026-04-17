@@ -1,10 +1,8 @@
 Project Name: Keen Keeper
 
-
 Short Description:
 
-
-Keen Keeper is a personalized timeline analytics dashboard designed to help users track and visualize their communication history. By transforming raw call, text, and video call data into interactive pie charts, it offers users clear insights into their daily interaction patterns in a highly intuitive interface.
+Keen Keeper holo ekti personal timeline analytics dashboard, jeta user-der communication history track ebong visualize korte shahajjo kore. Raw call, text, ebong video call data-ke interactive pie chart-e transform korar maddhome, ekti intuitive interface-e user-der daily interaction pattern-er ekta clear idea dey.
 
 Technologies Used:Frontend: React.js
 
@@ -12,15 +10,14 @@ Data Visualization: Recharts (Pie Chart, ResponsiveContainer)
 
 State Management: React Context API (TimelineContext)
 
-Styling: Modern CSS & Responsive Design principles
+Styling: Modern CSS ebong Responsive Design principles
 
 Language & Logic: JavaScript (ES6+), custom hooks (useState, useContext)
 
 3 Key Features:
 
+Seamless Dynamic Filtering: Users effortlessly tader communication history-ke category onujayi (Call, Text, ba Video) filter korte pare, jeta nirdishto interaction type dekhar jonno khub helpful.
 
-Seamless Dynamic Filtering: Users can effortlessly filter their communication history by category—Call, Text, or Video—providing a focused view of specific interaction types.
+Real-time Data Visualization: Ete highly responsive ebong interactive chart use kora hoyeche, jeta notun history data ashar shathe shathe instantly update hoye jay. Ar hover korle tooltip-er maddhome detailed info dekha jay.
 
-Real-time Data Visualization: The application features highly responsive, interactive charts that update instantly as new history data is accessed, complete with hover tooltips for detailed information.
-
-Adaptive UI Architecture: Built with a mobile-first approach, the dashboard ensures that data is rendered with perfect aspect ratios across all devices, while implementing smart error handling to manage empty data states gracefully.
+Adaptive UI Architecture: Mobile-first approach-e build kora hoyeche, jeta shob device-e chart-ke perfect aspect ratio-te render kore. Ebong empty data state handle korar jonno smart error handling implement kora hoyeche..
