@@ -1,16 +1,21 @@
-# React + Vite
+Project Name: Keen Keeper
+Short Description:
+Keen Keeper is a personalized timeline analytics dashboard designed to help users track and visualize their communication history. By transforming raw call, text, and video call data into interactive pie charts, it offers users clear insights into their daily interaction patterns in a highly intuitive interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Technologies Used:
+Frontend: React.js
 
-Currently, two official plugins are available:
+Data Visualization: Recharts (Pie Chart, ResponsiveContainer)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+State Management: React Context API (TimelineContext)
 
-## React Compiler
+Styling: Modern CSS & Responsive Design principles
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Language & Logic: JavaScript (ES6+), custom hooks (useState, useContext)
 
-## Expanding the ESLint configuration
+3 Key Features:
+Seamless Dynamic Filtering: Users can effortlessly filter their communication history by category—Call, Text, or Video—providing a focused view of specific interaction types.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Real-time Data Visualization: The application features highly responsive, interactive charts that update instantly as new history data is accessed, complete with hover tooltips for detailed information.
+
+Adaptive UI Architecture: Built with a mobile-first approach, the dashboard ensures that data is rendered with perfect aspect ratios across all devices, while implementing smart error handling to manage empty data states gracefully.
