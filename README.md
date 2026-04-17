@@ -6,10 +6,7 @@ Short Description:
 
 Keen Keeper is a personalized timeline analytics dashboard designed to help users track and visualize their communication history. By transforming raw call, text, and video call data into interactive pie charts, it offers users clear insights into their daily interaction patterns in a highly intuitive interface.
 
-Technologies Used:
-
-
-Frontend: React.js
+Technologies Used:Frontend: React.js
 
 Data Visualization: Recharts (Pie Chart, ResponsiveContainer)
 
