@@ -17,8 +17,8 @@ const SingleFriendCard = ({friend}) => {
                
                <div className='badge'>
             {
-                tags.map(tag=>{
-                   return <h3 className='bg-green-100 px-3 py-1 rounded-2xl'>{tag}</h3>
+                tags.map((tag,index)=>{
+                   return <h3 key={index} className='bg-green-100 px-3 py-1 rounded-2xl'>{tag}</h3>
                 })
              }               
            </div>

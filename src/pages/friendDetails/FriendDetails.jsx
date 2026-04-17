@@ -1,22 +1,40 @@
-import { useLoaderData, useParams } from 'react-router';
+import { Navigate, useLoaderData, useParams } from 'react-router';
 import { RiNotificationSnoozeLine, RiDeleteBin5Line } from "react-icons/ri";
 import { FiPhoneCall } from "react-icons/fi";
 import { BsArchive } from "react-icons/bs";
 import { MdOutlineTextsms } from "react-icons/md";
 import { CiVideoOn } from "react-icons/ci";
+import { TimelineContext } from '../../contextData/ContextData';
+import { useContext } from 'react';
+import { toast } from 'react-toastify';
 
 const FriendDetails = () => {
+   const [data,setData] = useContext(TimelineContext)
+   
+   const handlerOfCall = () => {
+       setData([...data, { ...friend, type: 'Call' }]);
+       toast.success("Call added to timeline!");
+   }
+   
+   const handlerOfText = () => {
+       setData([...data, { ...friend, type: 'Text' }]);
+       toast.success("Text added to timeline!");
+   }
+   
+   const handlerOfVedio = () => {
+       setData([...data, { ...friend, type: 'Video' }]);
+       toast.success("Vedio Call added to timeline!");
+   }
+
     const { userId } = useParams();
     const friends = useLoaderData();
-    
+  
     const friend = friends.find(f => f.id == Number(userId));
-    console.log(friend)
-    if (!friend) {
-        return <h3>Friends not founded.</h3>;
-    }
-    
+  
     const { name, picture, status, bio, tags, days_since_contact,goal,next_due_date
     } = friend;
+
+  
 
     return (
         <div>
@@ -92,15 +110,15 @@ const FriendDetails = () => {
 
                         <h3 className='font-bold text-xl text-gray-500'>Quick Check-In</h3>
                         <div className='grid grid-cols-3 gap-10'>
-                            <div className='bg-gray-100 rounded-xl flex flex-col items-center p-5 gap-3'>
+                            <div onClick={handlerOfCall} className='bg-gray-100 rounded-xl flex flex-col items-center p-5 gap-3'>
                             <FiPhoneCall className='size-8' />
                             <p className='text-xl  text-gray-500'>Call</p>
                             </div>
-                            <div className='bg-gray-100 rounded-xl flex flex-col items-center p-5 gap-3'>
+                            <div onClick={handlerOfVedio} className='bg-gray-100 rounded-xl flex flex-col items-center p-5 gap-3'>
                             <MdOutlineTextsms className='size-8' />
                             <p className='text-xl  text-gray-500'>Text</p>
                             </div>
-                            <div className='bg-gray-100 rounded-xl flex flex-col items-center p-5 gap-3'>
+                            <div onClick={handlerOfText} className='bg-gray-100 rounded-xl flex flex-col items-center p-5 gap-3'>
                             <CiVideoOn className='size-8'  />
                             <p className='text-xl  text-gray-500'>Video</p>
                             </div>

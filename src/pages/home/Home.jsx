@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import FriendsCard from '../../Component/friendsCard/FriendsCard';
 
 const Home = () => {
@@ -29,7 +29,9 @@ const Home = () => {
              </div>
              
            </div>
+           <Suspense fallback={<div className='text-center my-20'><span className="loading loading-spinner text-error size-10 "></span></div>}>
            <FriendsCard></FriendsCard>
+           </Suspense>
         </div>
     );
 };
